@@ -1,0 +1,478 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #111827;
+}
+
+/*Estilos del header*/
+.header {
+    background-color: #1f273a;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.student,
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #ebc8da;
+}
+
+.title {
+    color: #ebc8da;
+}
+
+.title img {
+    width: 12rem;
+    -webkit-user-drag: none;
+}
+
+.student img {
+    width: 2.6rem;
+    -webkit-user-drag: none;
+}
+
+
+.test {
+    color: var(--font);
+    transition: transform 0.3s ease-in-out;
+}
+
+.test:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+/****************************************************************/
+
+
+
+
+/*Estilos de las secciones*/
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 30px 0px;
+}
+
+.section code {
+    padding: 0.6em 0.4em;
+    background-color: #2b2828;
+    color: #f472b6;
+    font-family: Consolas, Monaco, monospace;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.section img {
+    justify-content: center;
+    align-self: center;
+}
+
+.title-section {
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.5);
+}
+
+/**********************************************************************/
+
+/*estilo de la tabla*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #1c2538;
+    text-align: center;
+}
+
+/****************************************************************************/
+
+
+.main-container {
+    display: flex;
+    gap: 7rem;
+    justify-content: space-evenly;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 70vh;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+}
+
+
+
+
+/*Estilo de la sidebar*/
+.sidebar {
+    display: flex;
+    border: 1px solid #2b2828;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+
+.sidebar ul {
+    border-left: solid 1px white;
+    list-style: none;
+    line-height: 2rem;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar ul li a:hover {
+    color: rgb(231, 28, 28);
+}
+
+/***********************************************************************************/
+
+
+
+
+/*media queries*/
+
+@media screen and (max-width: 1250px) {
+
+    .header {
+        padding: 0px 15px;
+        font-size: 0.66rem;
+    }
+
+    .title img {
+        width: 10rem;
+    }
+
+    .student img {
+        width: 2rem;
+    }
+
+    .main-container {
+        gap: 2rem;
+    }
+
+    .section img {
+        width: 600px;
+    }
+
+    .section table tr td img {
+        width: unset;
+    }
+
+    /*Estilo de la sidebar*/
+    .sidebar {
+        display: flex;
+        border: 1px solid #2b2828;
+        padding: 0.6rem;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+        margin-top: 3rem;
+        font-size: 11px;
+    }
+
+    .sidebar ul {
+        border-left: solid 1px white;
+        list-style: none;
+        line-height: 2rem;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sidebar ul li a:hover {
+        color: rgb(231, 28, 28);
+    }
+
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .main-container {
+        gap: 1rem;
+    }
+
+    .section img {
+        width: 450px;
+    }
+
+    .section {
+        font-size: 13px;
+    }
+
+    .section code {
+        font-size: 10px;
+    }
+
+    /*Estilo de la sidebar*/
+    .sidebar {
+        padding: 0.6rem;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+        margin-top: 3rem;
+        font-size: 9px;
+    }
+
+    .sidebar ul {
+        border-left: solid 1px white;
+        list-style: none;
+        line-height: 2rem;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sidebar ul li a:hover {
+        color: rgb(231, 28, 28);
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .header {
+        font-size: 0.6rem;
+    }
+
+    .main-container {
+        gap: 0.6rem;
+    }
+
+    .section img {
+        width: 250px;
+    }
+
+    .section {
+        font-size: 10px;
+    }
+
+    .section code {
+        padding: 0.6em 0.4em;
+        background-color: #2b2828;
+        color: #f472b6;
+        font-family: Consolas, Monaco, monospace;
+        font-size: 9px;
+        border-radius: 4px;
+    }
+
+    .main-container {
+        gap: 1rem;
+    }
+
+    .section table tr td img {
+        width: 120px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 35vh;
+        margin-bottom: 3rem;
+        margin-left: 0.7rem;
+    }
+
+    /*Estilo de la sidebar*/
+
+    .sidebar ul {
+        border-left: solid 1px white;
+        list-style: none;
+        line-height: 2rem;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sidebar ul li a:hover {
+        color: rgb(231, 28, 28);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .header {
+        font-size: 0.3rem;
+    }
+
+    .student img {
+        width: 1.3rem;
+    }
+
+    .title img {
+        width: 6.5rem;
+    }
+
+    .main-container {
+        gap: 0.2rem;
+    }
+
+    .section img {
+        width: 340px;
+    }
+
+    .section {
+        font-size: 10px;
+    }
+
+    .section code {
+        padding: 0.6em 0.4em;
+        background-color: #2b2828;
+        color: #f472b6;
+        font-family: Consolas, Monaco, monospace;
+        font-size: 9px;
+        border-radius: 4px;
+    }
+
+    .main-container {
+        gap: 1rem;
+    }
+
+    .section table tr td img {
+        width: 120px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 65vh;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+    }
+
+    /*Estilo de la sidebar*/
+
+    .sidebar {
+        display: unset;
+        width: 20px;
+        border: 0px solid #2b2828;
+        padding: 1rem;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
+        margin-top: 3rem;
+        margin-right: 1rem;
+        font-size: 0px;
+    }
+
+    .sidebar ul {
+        border-left: solid 0px white;
+        list-style: none;
+        line-height: 2rem;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sidebar ul li a:hover {
+        color: rgb(231, 28, 28);
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .header {
+        font-size: 0.3rem;
+    }
+
+    .student img {
+        width: 1.3rem;
+    }
+
+    .title img {
+        width: 6.5rem;
+    }
+
+    .main-container {
+        gap: 0.2rem;
+    }
+
+    .section img {
+        width: 300px;
+    }
+
+    .section {
+        font-size: 8px;
+    }
+
+    .section code {
+        padding: 0.6em 0.4em;
+        background-color: #2b2828;
+        color: #f472b6;
+        font-family: Consolas, Monaco, monospace;
+        font-size: 9px;
+        border-radius: 4px;
+    }
+
+    .main-container {
+        gap: 1rem;
+    }
+
+    .section table tr td img {
+        width: 120px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 35vh;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+    }
+
+    /*Estilo de la sidebar*/
+
+    .sidebar {
+        display: unset;
+        width: 20px;
+        border: 0px solid #2b2828;
+        padding: 1rem;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
+        margin-top: 3rem;
+        margin-right: 1rem;
+        font-size: 0px;
+    }
+
+    .sidebar ul {
+        border-left: solid 0px white;
+        list-style: none;
+        line-height: 2rem;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sidebar ul li a:hover {
+        color: rgb(231, 28, 28);
+    }
+}
