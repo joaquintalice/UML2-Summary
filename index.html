@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="title">UML2 - Resumen para <img
+                src="https://asset-cdn.schoology.com/system/files/imagecache/node_themes/sites/all/themes/schoology_theme/node_themes/915510194/centro%20logo_6418758e37299.png"
+                alt=""> </h1>
+        <h1 class="student">Joaquin Talice <a class="test" href="https://github.com/joaquintalice"><img
+                    src="./assets/github-mark-white.png" alt="github logo"></a> </h1>
+    </div>
+
+    <div class="main-container">
+
+        <div class="content">
+
+            <div class="main-content">
+                <div class="section">
+                    <h2 class="title-section">Diagrama de clases UML2</h2>
+                    <p>UML son las siglas de “Unified Modeling Language” o “Lenguaje Unificado de Modelado”.</p>
+                    <p>Se trata de
+                        un estándar que se ha adoptado a nivel internacional por numerosos organismos y empresas para
+                        crear esquemas, diagramas y documentación relativa a los desarrollos de software (programas
+                        informáticos).</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s1">Categorías de diagramas en UML2</h2>
+                    <p><strong>-Diagramas de estructura:</strong> Muestran la estructura estática del sistema modelado.
+                    </p>
+                    <p><strong>-Diagramas de comportamiento:</strong> Muestran el comportamiento dinámico entre los
+                        objetos en el
+                        sistema, incluyendo cosas como los métodos, colaboraciones y actividades.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s2">Diagramas de estructura en general</h2>
+                    <p>Los diagramas de estructura muestran la estructura estática del sistema modelado, centrándose en
+                        los elementos del sistema independientemente del tiempo.</p>
+                    <p>La misma, muestra los tipos y las instancias del sistema. </p>
+                    <p>Son muy útiles a lo largo del ciclo de vida del software para una gran cantidad de miembros del
+                        equipo. Ya que nos permitirán la validación del diseño y la comunicación del diseño entre
+                        miembros del equipo y otros equipos.</p>
+                    <p>En UML2 se consideran a los diagramas de estructura como una clasificación</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s3">Diagramas de clases en particular</h2>
+                    <p>UML 2 considera los diagramas de estructura como una clasificación, es decir, que, como tal, no
+                        hay un diagrama llamado “diagrama de estructura”.
+                        Sin embargo, el diagrama de clases ofrece un excelente ejemplo del tipo de diagrama de
+                        estructura y nos proporciona un conjunto inicial de elementos de notación que utilizan todos los
+                        demás diagramas de estructura.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s4">Los básicos</h2>
+                    <p>En la mayoría de los modelos UML, estos tipos incluyen:</p>
+                    <ul>
+                        <li>Clase</li>
+                        <li>Interfaz</li>
+                        <li>Tipo de datos</li>
+                        <li>Componente</li>
+                    </ul>
+                    <p>UML llama a estos tipos “clasificadores”. En general, se puede pensar a un clasificador como una
+                        “clase”, pero técnicamente, un clasificador es un término más general que también se refiere a
+                        los otros 3 tipos mencionados anteriormente.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s5">Representación de una clase en UML</h2>
+                    <p>La representación de una clase en UML está formada por un rectángulo, el cual contiene 3
+                        compartimientos.</p>
+                    <ul>
+                        <li>El primer compartimiento, pertenece al nombre de la clase.</li>
+                        <li>El segundo compartimiento, pertenece a los atributos de la clase.</li>
+                        <li>El tercer compartimiento, pertenece a los métodos de la clase.</li>
+                    </ul>
+                    <p>Hay que tener en cuenta el primer compartimiento es obligatorio, mientras que los otros dos
+                        compartimientos, son opcionales.</p>
+                    <p>Dicho rectángulo se vería algo así: </p>
+                    <img src="./assets/representacionClaseUML.png" onclick="abrirImagen(this)">
+                    <p>Tal como se mencionó, en el primer compartimiento nos encontramos con el nombre de la clase, en
+                        el segundo compartimento con los atributos de la clase y en el tercer compartimento con los
+                        métodos/operaciones/funciones de la clase. </p>
+                    <p>También podemos observar simbología como “+” y “-“, que en el diseño orientado a objetos
+                        representan la visibilidad de los atributos y los métodos.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s6">Visibilidad</h2>
+                    <p>En UML hay distintos tipos de visibilidad:</p>
+                    <ul>
+                        <li><span>Público:</span> Representado por un “ + ”. <br>
+                            Se puede acceder al miembro de la clase desde cualquier lugar.
+                        </li>
+                        <li><span>Protegido:</span> Representado por un “ # ”. <br>
+                            Sólo se puede acceder al miembro de la clase desde la propia clase o desde una clase que
+                            herede de ella.
+                        </li>
+                        <li>
+                            <span>Privado:</span> Representado por un “ - “. <br>
+                            Sólo se puede acceder al miembro de la clase desde la propia clase.
+                        </li>
+                        <li>
+                            <span>Paquete:</span> Representado por un “ ~ “. <br>
+                            • Sólo se puede acceder al miembro de la clase desde cualquier otra clase siempre y cuando
+                            se encuentre en el mismo paquete.
+                        </li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s7">Atributos de la clase</h2>
+                    <p>La sección de atributos de una clase (el compartimento central) es opcional y enumera cada uno de
+                        los atributos de la clase en líneas separadas en formato de lista.</p>
+                    <p>La sintaxis usada para estos atributos es la siguiente:</p>
+                    <code>nombre : tipo del atributo</code>
+                    <p>Primero, se pone el nombre partiendo en minúsculas. Luego, dos puntos para separar el nombre del
+                        tipo del atributo y finalmente, el tipo del atributo, el cual podría ser un número entero, una
+                        cadena de texto, un booleano, entre otros, dependiendo del tipo de diagrama que estemos
+                        haciendo.</p>
+                    <p>En un diagrama de clases para software, normalmente se utiliza el tipo de datos que soporta el
+                        lenguaje de programación que se vaya a utilizar. Pero se podrían utilizar otras unidades que
+                        sean legibles y tengan sentido para la persona que lea el diagrama, como por ejemplo, utilizar
+                        “minutos, dólares, fecha, etc”</p>
+                    <p>También, podemos especificar un valor por defecto para los atributos.</p>
+                    <code>nombre : tipo del atributo = valor por defecto</code>
+                    <p>Donde la sintaxis es la misma, nada más que se agrega un “=” luego del tipo de nuestro atributo,
+                        y a su derecha, el valor por defecto que queremos que tenga.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s8">Operaciones de la clase</h2>
+                    <p>Las operaciones de la clase también conocidas como “funcionalidades” o “métodos”, se encuentran
+                        en el tercer compartimento. </p>
+                    <p>Tal como los atributos, las operaciones también son opcionales y se enumeran una a una en formato
+                        de lista.</p>
+                    <p>Siendo su sintaxis la siguiente:</p>
+                    <code>nombre(lista de parámetros) : tipo de valor retornado</code>
+                    <p>Primero tenemos el nombre, seguido de una apertura y cierre de paréntesis (), dentro de los
+                        cuales, estarán los parámetros si es que corresponde. Luego, tenemos dos puntos, los cuales
+                        separan el nombre y sus parámetros, de el tipo de valor retornado. </p>
+                    <p>Si la operación tiene parámetros, estos, tendrán la misma sintaxis que los atributos, es decir:
+                    </p>
+                    <code>(nombre del parámetro : tipo del parámetro)</code>
+                    <p>Solo que se encontrarán dentro de la sintaxis de las operaciones, entre los paréntesis a la
+                        derecha del nombre de la operación.</p>
+                    <p>Los parámetros pueden tener un indicador opcional para mostrar si el parámetro es de entrada o de
+                        salida. Dicho indicador se puede encontrar como “in” u “out”, siendo la sintaxis de la siguiente
+                        manera:</p>
+                    <code>nombre( in nombreDelParámetro : tipoDelParámetro ) : tipo de valor retornado</code>
+                    <p>Normalmente se omite este indicador ya que, por defecto, en lenguajes modernos todos los
+                        parámetros son “in”. Salvo que se esté utilizando uno viejo como “Fortran”, de ser ese el caso,
+                        es útil especificar el indicador “in” u “out”.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s9">Tipos de relacionamiento en el diagrama de clases</h2>
+                    <table>
+                        <tr>
+                            <th>Tipo de Relacionamiento</th>
+                            <th>Notación</th>
+                        </tr>
+                        <tr>
+                            <td>Asociación</td>
+                            <td>
+                                <img src="./assets/asociacion.jpeg" alt="Asociación">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Herencia</td>
+                            <td>
+                                <img src="./assets/herencia.jpeg" alt="Herencia">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Realización/Implementación</td>
+                            <td>
+                                <img src="./assets/realizacion.jpeg" alt="Realización/Implementación">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dependencia</td>
+                            <td>
+                                <img src="./assets/dependencia.jpeg" alt="Dependencia">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Agregación</td>
+                            <td>
+                                <img src="./assets/agregacion.jpeg" alt="Agregación">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Composición</td>
+                            <td>
+                                <img src="./assets/composición.jpeg" alt="Composición">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s10">Herencia</h2>
+                    <p>La herencia es la capacidad de una clase (clase secundaria) de heredar la funcionalidad idéntica
+                        de otra clase (superclase) y luego agregarle una funcionalidad propia a la clase secundaria.</p>
+                    <p>La misma, es representada con una flecha sólida que sale desde la clase secundaria hacia la
+                        superclase y termina con una flecha triangular sin relleno.</p>
+                    <img src="./assets/representacionHerencia.png" alt="" width="780px" onclick="abrirImagen(this)">
+                    <p>En este ejemplo, las clases secundarias están heredando todos los atributos y operaciones de la
+                        superclase, y le estamos especificando una funcionalidad propia a cada una, la cual es un nuevo
+                        atributo y una nueva operación.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s11">Clases y operaciones abstractas</h2>
+                    <p>En la imagen anterior se puede apreciar que el nombre y una de las operaciones de la superclase
+                        están en cursiva. Esto indica que esa clase y esa operación son abstractas. </p>
+                    <p>Una operación abstracta es una operación de una clase que no tiene implementación o definición,
+                        solamente declaración.</p>
+                    <p>Una clase abstracta es una clase de la cual no se pueden definir instancias. Por ese motivo,
+                        normalmente no se utiliza la cursiva en el nombre de una superclase, ya que sabemos que no es
+                        posible definir instancias de una superclase.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s12">Asociación</h2>
+                    <p>La asociación indica que ciertos objetos están relacionados o conectados de alguna forma.</p>
+                    <p>Hay 5 tipos de asociaciones:</p>
+                    <ul>
+                        <li>Asociación bi-direccional</li>
+                        <li>Asociación uni-direccional</li>
+                        <li>Asociación de clases</li>
+                        <li>Agregación(básica y de composición)</li>
+                        <li>Asociaciones reflexivas</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s13">Asociación bi-direccional</h2>
+                    <p>Una asociación es un vínculo entre dos clases, por lo que las asociaciones siempre son
+                        bi-direccionales. Eso significa que ambas clases se conocen una a la otra y su relación, a menos
+                        que se califique una asociación de otro tipo.</p>
+                    <p>La asociación bi-direccional se indica mediante una línea sólida entre dos clases.</p>
+                    <p>En cualquier extremo de la línea se coloca un nombre de función y un valor de multiplicidad.</p>
+                    <img src="./assets/bi-direccional.png" alt="" width="780px" onclick="abrirImagen(this)">
+                    <p>En este ejemplo, tenemos una conexión bi-direccional entre dos clases. Una llamada Profesor y la
+                        otra llamada Libros. Con la multiplicidad podemos saber que solo puede haber un Profesor y un
+                        solo Libro. </p>
+                    <p>También podemos notar que los roles son “Autor” y “LibroEscrito”. Esto quiere decir, que la clase
+                        Profesor, tendrá un atributo llamado LibroEscrito que contendrá como valor el Libro que
+                        escribió. </p>
+                    <p>Y la clase Libro, tendrá un atributo llamado Autor, que contendrá como valor el Profesor.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s14">Asociación uni-direccional</h2>
+                    <p>Las asociaciones suelen ser bi-direccionales pero a veces es importante hacerlas
+                        uni-direccionales para restringir su navegación en un solo sentido. </p>
+                    <p>La asociación uni-direccional hará que dos clases se relacionen, pero solo una clase conocerá que
+                        la relación existe.</p>
+                    <p>La misma, es dibujada con una sólida línea entre ambas clases, con una flecha abierta(no una
+                        flecha cerrada ni un triángulo) apuntando hacia la clase conocida.</p>
+                    <img src="./assets/uni-direccional.png" alt="" width="780px" onclick="abrirImagen(this)">
+                    <p>Volviendo al mismo ejemplo, ahora realizado con una asociación uni-direccional, se puede observar
+                        que el profesor conoce la clase Libros, pero los Libros no conocen a la clase Profesor.</p>
+                    <p>También sabemos que hay cero o más libros escritos por el Profesor.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s15">Asociación de clase</h2>
+                    <p>Una asociación de clase es una clase que forma parte del relacionamiento entre otras dos clases.
+                        La misma es representada con una línea punteada y se suele utilizar para definir aún más la
+                        relación entre las dos clases en las que se interponga.</p>
+                    <img src="./assets/asociacion-de-clase.png" alt="" onclick="abrirImagen(this)">
+                    <p>En este ejemplo tenemos una clase Estudiante que representa un estudiante y una clase Curso, que
+                        representa un curso educativo. La clase Estudiante puede inscribirse en un curso. Una clase de
+                        asociación llamada “Inscripción” define aún más la relación entre las clases Estudiante y Curso
+                        al proporcionar información de sección, grado y semestre relacionada con la relación de
+                        asociación.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s16">Agregación</h2>
+                    <p>En los modelos UML, una relación de agregación muestra a una clase como parte o subordinado de
+                        otra clase.</p>
+                    <p>Una agregación es un tipo especial de asociación en la que los objetos se ensamblan o configuran
+                        juntos para crear un objeto más complejo.</p>
+                    <p>Una agregación describe un grupo de objetos y como interactúa con ellos. </p>
+                    <p>A su vez, también protege la integridad de un conjunto de objetos al definir un único punto de
+                        control, denominado “agregado”, en el objeto que representa al conjunto. La agregación también
+                        usa el objeto de control para decidir cómo responden los objetos ensamblados a los cambios o
+                        instrucciones que podrían afectar el conjunto.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s17">Agregación básica</h2>
+                    <p>La asociación de agregación básica indica que una clase es parte de otra clase.</p>
+                    <p>En esta relación, la clase secundaria “Rueda”, puede sobrevivir a su clase principal “Auto”.</p>
+                    <p>Esta agregación es representada mediante una línea sólida con un rombo sin relleno en la parte de
+                        la clase principal, en este caso “Auto”.</p>
+                    <img src="./assets/agregacion-basica.png" alt="" onclick="abrirImagen(this)">
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s18">Agregación de composición</h2>
+                    <p>La agregación de composición representa que la vida útil de la clase Departamento depende de la
+                        vida útil de la clase Compañía. Es decir, si la compañía se destruye, también lo hará el
+                        departamento.</p>
+                    <p>Dicha agregación es representada de igual manera que la agregación básica pero esta vez,
+                        rellenando el rombo, tal como se ve en la imagen de ejemplo.</p>
+                    <img src="./assets/agregacion-composicion.png" alt="" onclick="abrirImagen(this)">
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s19">Asociación reflexiva</h2>
+                    <p>En ocasiones, una clase es una asociación consigo misma. Esto puede ocurrir cuando una clase
+                        tiene objetos que pueden jugar diversos papeles. </p>
+                    <p>En el ejemplo se puede ver como las instancias de Persona llamadas “Padres”, pueden crear cero o
+                        más instancias llamadas Hijos y para ello, es necesario 2 Padres.</p>
+                    <img src="./assets/asociacion-reflexiva.png" alt="" onclick="abrirImagen(this)">
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s20">Paquetes</h2>
+                    <p>Los paquetes son una forma de organizar nuestras clases en un modelo extenso de UML. </p>
+                    <p>Se pueden organizar las clases tal como si fuera una carpeta con un nombre que represente al
+                        conjunto y con su respectivo contenido en el interior.</p>
+                    <img src="./assets/paquete1.png" alt="" onclick="abrirImagen(this)">
+                    <p>En el ejemplo, se puede ver la organización antes mencionada. Tal como si fuese una carpeta en
+                        nuestro sistema. Donde todo lo relacionado a “cuentas” se encuentra en un paquete nombrado como
+                        tal.</p>
+                    <img src="./assets/paquete2.png" alt="" onclick="abrirImagen(this)">
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s21">Instancias</h2>
+                    <p>Su propósito es mostrar información interesante o relevante y la notación es la misma que la de
+                        una clase, pero en lugar de que el compartimento superior tenga simplemente el nombre de la
+                        clase, el nombre es una concatenación subrayada de: </p>
+                    <code>Nombre de instancia : Nombre de clase</code>
+                    <p>Por ejemplo:</p>
+                    <code>Donald : Persona</code>
+                    <p>Debido al propósito antes mencionado, no es necesario incluír atributos ni operaciones. Pero
+                        suele ser útil incluír algunos atributos que brinden información relevante.</p>
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s22">Interfaces</h2>
+                    <p>Una interfaz en UML2 s un elemento del modelo de clase que define un conjunto de operaciones que
+                        se deben implementar en otros elementos del modelo, como clases o componentes.</p>
+                    <p>Las interfaces se definen tal como una clase, pero en el nombre tienen <<interfaz>> encima de su
+                            nombre. A su vez, es posible identificar a una interfaz porque la línea con la flecha es
+                            punteada y no sólida. </p>
+                    <p>Las interfaces no heredan, por lo que, en el ejemplo de abajo, profesor y estudiante solo toman
+                        la interfaz de persona, pero no heredan.</p>
+                    <img src="./assets/interfaz.png" alt="" width="780px" onclick="abrirImagen(this)">
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s23">Estructuras internas</h2>
+                    <p>Permite mostrar como se compone internamente una clase u otro clasificador.</p>
+                    <p>En el ejemplo se puede ver una clase Avión que tiene 4 Motores y 2 controles de software y a su
+                        vez, esos motores pueden estar controlados por entre 0 y 2 controles de software. </p>
+                    <img src="./assets/estructura-interna1.png" alt="" width="780px" onclick="abrirImagen(this)">
+                    <p>Si aplicamos la estructura interna, podríamos ver en detalle como se compone todo ese conjunto
+                        internamente. Quedando de la siguiente manera:</p>
+                    <img src="./assets/estructura-interna2.png" alt="" width="780px" onclick="abrirImagen(this)">
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s24">Roles</h2>
+                    <p>Los roles son una manera más genérica de modelar la relación de una clase.</p>
+                    <p>Los roles son muy similares a la notación de instancias, pero solo pueden utilizarse en un
+                        diagrama de estructura interna, tal como en el ejemplo anterior sobre el avión y la estructura
+                        interna. Los roles aquí serían “controla”. </p>
+                    <img src="./assets/roles.png" alt="" width="780px" onclick="abrirImagen(this)">
+                </div>
+                <div class="section">
+                    <h2 class="title-section" id="s25">Diagrama Taller de Bicicletas</h2>
+                    <p>Diagrama sobre un Taller de Bicicletas.</p>
+                    <p>En este diagrama quise mostrar como se relaciona un Taller de bicicletas con Cliente, Mecánico,
+                        Bicicleta y Reparación</p>
+                    <p>En el mismo, podemos ver que Taller de bicicletas tiene uno o más clientes y uno o más mecánicos
+                    </p>
+                    <p>Luego, siguiendo por el Cliente, podemos ver que tiene una bicicleta rota y bicicleta rota tiene
+                        un dueño, que es el cliente que trajo la misma</p>
+                    <p>Una bici puede necesitar una reparación, pero la reparación solo existe si la bicicleta existe,
+                        por eso le puse la asociación componente</p>
+                    <p>Siguiendo por el lateral de Bicicleta, podemos ver que una bicicleta también tiene un mecánico
+                        asignado y un mecánico tiene una bicicleta asignada</p>
+                    <p>Luego, el mecánico se conecta con la reparación y la reparación depende no solo de que exista
+                        bicicleta, si no también de que exista el mecánico</p>
+                    <img src="./assets/diagramaTaller.jpeg" alt="" width="780px" onclick="abrirImagen(this)">
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul class="ul-list">
+                <li><a href="#s1">Categorías de diagramas en UML2</a></li>
+                <li><a href="#s2">Diagramas de estructura en general</a></li>
+                <li><a href="#s3">Diagramas de clases en particular</a></li>
+                <li><a href="#s4">Los básicos</a></li>
+                <li><a href="#s5">Representación de una clase en UML</a></li>
+                <li><a href="#s6">Visibilidad</a></li>
+                <li><a href="#s7">Atributos de la clase</a></li>
+                <li><a href="#s8">Operaciones de la clase</a></li>
+                <li><a href="#s9">Tipos de relacionamiento en el diagrama de clases</a></li>
+                <li><a href="#s10">Herencia</a></li>
+                <li><a href="#s11">Clases y operaciones abstractas</a></li>
+                <li><a href="#s12">Asociación</a></li>
+                <li><a href="#s13">Asociación bi-direccional</a></li>
+                <li><a href="#s14">Asociación uni-direccional</a></li>
+                <li><a href="#s15">Asociación de clase</a></li>
+                <li><a href="#s16">Agregación</a></li>
+                <li><a href="#s17">Agregación básica</a></li>
+                <li><a href="#s18">Agregación de composición</a></li>
+                <li><a href="#s19">Asociación reflexiva</a></li>
+                <li><a href="#s20">Paquetes</a></li>
+                <li><a href="#s21">Instancias</a></li>
+                <li><a href="#s22">Interfaces</a></li>
+                <li><a href="#s23">Estructuras internas</a></li>
+                <li><a href="#s24">Roles</a></li>
+                <li><a href="#s25">Diagrama Taller de Bicicletas</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
