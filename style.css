@@ -13,6 +13,7 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 0.7rem;
 }
 
 .student,
@@ -176,7 +177,7 @@ th {
     }
 
     .section img {
-        width: 600px;
+        width: 800px;
     }
 
     .section table tr td img {
@@ -184,17 +185,29 @@ th {
     }
 
     /*Estilo de la sidebar*/
-    .sidebar {
+    .content {
         display: flex;
-        border: 1px solid #2b2828;
-        padding: 0.6rem;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+        flex-direction: column;
+        width: 150vh;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+    }
+
+    /*Estilo de la sidebar*/
+
+    .sidebar {
+        display: unset;
+        width: 20px;
+        border: 0px solid #2b2828;
+        padding: 1rem;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
         margin-top: 3rem;
-        font-size: 11px;
+        margin-right: 1rem;
+        font-size: 0px;
     }
 
     .sidebar ul {
-        border-left: solid 1px white;
+        border-left: solid 0px white;
         list-style: none;
         line-height: 2rem;
     }
@@ -219,7 +232,7 @@ th {
     }
 
     .section img {
-        width: 450px;
+        width: 600px;
     }
 
     .section {
@@ -231,15 +244,29 @@ th {
     }
 
     /*Estilo de la sidebar*/
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 130vh;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+    }
+
+    /*Estilo de la sidebar*/
+
     .sidebar {
-        padding: 0.6rem;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+        display: unset;
+        width: 20px;
+        border: 0px solid #2b2828;
+        padding: 1rem;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
         margin-top: 3rem;
-        font-size: 9px;
+        margin-right: 1rem;
+        font-size: 0px;
     }
 
     .sidebar ul {
-        border-left: solid 1px white;
+        border-left: solid 0px white;
         list-style: none;
         line-height: 2rem;
     }
@@ -266,7 +293,7 @@ th {
     }
 
     .section img {
-        width: 250px;
+        width: 400px;
     }
 
     .section {
@@ -278,7 +305,7 @@ th {
         background-color: #2b2828;
         color: #f472b6;
         font-family: Consolas, Monaco, monospace;
-        font-size: 9px;
+        font-size: 13px;
         border-radius: 4px;
     }
 
@@ -293,15 +320,26 @@ th {
     .content {
         display: flex;
         flex-direction: column;
-        width: 35vh;
+        width: 90vh;
         margin-bottom: 3rem;
-        margin-left: 0.7rem;
+        margin-left: 3rem;
     }
 
     /*Estilo de la sidebar*/
 
+    .sidebar {
+        display: unset;
+        width: 20px;
+        border: 0px solid #2b2828;
+        padding: 1rem;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
+        margin-top: 3rem;
+        margin-right: 1rem;
+        font-size: 0px;
+    }
+
     .sidebar ul {
-        border-left: solid 1px white;
+        border-left: solid 0px white;
         list-style: none;
         line-height: 2rem;
     }
