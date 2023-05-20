@@ -6,3 +6,24 @@ function abrirImagen(elemento) {
     // Ejemplo: abrir la imagen en una ventana emergente con un tamaño específico
     window.open(rutaImagen, "_blank", "width=1200, height=800");
 }
+
+
+window.addEventListener("scroll", function () {
+
+
+
+    let scrollPosition = window.scrollY;
+    console.log(scrollPosition);
+
+    const sidebar = document.querySelector(".sidebar");
+    const content = document.querySelector(".content");
+    let limitPosition = sidebar.offsetHeight;
+    console.log(limitPosition);
+
+    if (scrollPosition >= limitPosition) {
+        sidebar.style.display = "none";
+        content.style.width = "100%"
+    } else {
+        sidebar.style.display = "flex";
+    }
+})
