@@ -17,10 +17,8 @@ window.addEventListener("scroll", function () {
 
     const sidebar = document.querySelector(".sidebar");
     const content = document.querySelector(".content");
-    let limitPosition = sidebar.offsetHeight;
-    console.log(limitPosition);
 
-    if (scrollPosition >= limitPosition) {
+    if (scrollPosition >= 400) {
         sidebar.style.display = "none";
         content.style.width = "100%"
     } else {
