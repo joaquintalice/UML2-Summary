@@ -157,7 +157,7 @@
                         parámetros son “in”. Salvo que se esté utilizando uno viejo como “Fortran”, de ser ese el caso,
                         es útil especificar el indicador “in” u “out”.</p>
                 </div>
-                <div class="section">
+                <div class="section" id="asoCont">
                     <h2 class="title-section" id="s9">Tipos de relacionamiento en el diagrama de clases</h2>
                     <table>
                         <tr>
@@ -199,6 +199,39 @@
                             <td>
                                 <img src="./assets/composición.jpeg" alt="Composición">
                             </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="section" id="cardCont">
+                    <h2 class="title-section" id="s25">Multiplicidad/Cardinalidad</h2>
+                    <table>
+                        <tr>
+                            <th>Multiplicidad/Cardinalidad</th>
+                            <th>Significado</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Uno y sólo uno</td>
+                        </tr>
+                        <tr>
+                            <td>0..1</td>
+                            <td>Cero o uno</td>
+                        </tr>
+                        <tr>
+                            <td>N..M</td>
+                            <td>Desde N hasta M</td>
+                        </tr>
+                        <tr>
+                            <td>*</td>
+                            <td>Cero o varios</td>
+                        </tr>
+                        <tr>
+                            <td>0..*</td>
+                            <td>Cero o varios</td>
+                        </tr>
+                        <tr>
+                            <td>1..*</td>
+                            <td>Uno o varios(al menos uno)</td>
                         </tr>
                     </table>
                 </div>
@@ -395,6 +428,7 @@
                 <li><a href="#s7">Atributos de la clase</a></li>
                 <li><a href="#s8">Operaciones de la clase</a></li>
                 <li><a href="#s9">Tipos de relacionamiento en el diagrama de clases</a></li>
+                <li><a href="#s25">Multiplicidad/Cardinalidad</a></li>
                 <li><a href="#s10">Herencia</a></li>
                 <li><a href="#s11">Clases y operaciones abstractas</a></li>
                 <li><a href="#s12">Asociación</a></li>
