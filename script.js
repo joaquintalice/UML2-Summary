@@ -21,7 +21,5 @@ window.addEventListener("scroll", function () {
     if (scrollPosition >= 400) {
         sidebar.style.display = "none";
         content.style.width = "100%"
-    } else {
-        sidebar.style.display = "flex";
     }
 })
