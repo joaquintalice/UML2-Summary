@@ -125,7 +125,7 @@ th {
 .content {
     display: flex;
     flex-direction: column;
-    width: 70vh;
+    width: 100vh;
     margin-bottom: 3rem;
     margin-left: 3rem;
     margin-right: 3rem;
@@ -166,7 +166,7 @@ th {
 
 /*media queries*/
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
 
     .header {
         padding: 0px 15px;
